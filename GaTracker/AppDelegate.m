@@ -13,7 +13,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [self _loadSharedInstance];
     return YES;
+}
+
+- (void)_loadSharedInstance
+{
+    [GATrackingService sharedInstance];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

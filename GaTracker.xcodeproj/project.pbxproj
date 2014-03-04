@@ -14,13 +14,23 @@
 		6D5E3F4518C58D71004D0CFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5E3F4418C58D71004D0CFA /* main.m */; };
 		6D5E3F4918C58D71004D0CFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5E3F4818C58D71004D0CFA /* AppDelegate.m */; };
 		6D5E3F4C18C58D71004D0CFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D5E3F4A18C58D71004D0CFA /* Main.storyboard */; };
-		6D5E3F4F18C58D71004D0CFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5E3F4E18C58D71004D0CFA /* ViewController.m */; };
 		6D5E3F5118C58D71004D0CFA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D5E3F5018C58D71004D0CFA /* Images.xcassets */; };
 		6D5E3F5818C58D71004D0CFA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5E3F5718C58D71004D0CFA /* XCTest.framework */; };
 		6D5E3F5918C58D71004D0CFA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5E3F3818C58D71004D0CFA /* Foundation.framework */; };
 		6D5E3F5A18C58D71004D0CFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5E3F3C18C58D71004D0CFA /* UIKit.framework */; };
 		6D5E3F6218C58D71004D0CFA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D5E3F6018C58D71004D0CFA /* InfoPlist.strings */; };
 		6D5E3F6418C58D71004D0CFA /* GaTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5E3F6318C58D71004D0CFA /* GaTrackerTests.m */; };
+		6D5E3F6E18C58DB7004D0CFA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5E3F6D18C58DB7004D0CFA /* QuartzCore.framework */; };
+		6D5E3F7A18C58F1C004D0CFA /* GATrackingService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5E3F7918C58F1C004D0CFA /* GATrackingService.m */; };
+		6D5E3F8418C5981F004D0CFA /* GAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5E3F8318C5981F004D0CFA /* GAViewController.m */; };
+		6D5E3F8718C59900004D0CFA /* GATrackedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5E3F8618C59900004D0CFA /* GATrackedController.m */; };
+		6D5E3F8D18C59AB7004D0CFA /* EventTrackedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5E3F8C18C59AB7004D0CFA /* EventTrackedViewController.m */; };
+		6D5E3F9018C59B18004D0CFA /* TrackedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5E3F8F18C59B18004D0CFA /* TrackedTableViewController.m */; };
+		6D5E3F9418C59EA5004D0CFA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5E3F9318C59EA5004D0CFA /* CoreData.framework */; };
+		6D5E3F9618C59EB1004D0CFA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5E3F9518C59EB1004D0CFA /* SystemConfiguration.framework */; };
+		6D5E3F9818C59F21004D0CFA /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5E3F9718C59F21004D0CFA /* libGoogleAnalyticsServices.a */; };
+		6D5E3F9A18C59F35004D0CFA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5E3F9918C59F35004D0CFA /* libz.dylib */; };
+		6D5E3F9C18C59F3D004D0CFA /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5E3F9B18C59F3D004D0CFA /* AdSupport.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +55,36 @@
 		6D5E3F4718C58D71004D0CFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6D5E3F4818C58D71004D0CFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6D5E3F4B18C58D71004D0CFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6D5E3F4D18C58D71004D0CFA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6D5E3F4E18C58D71004D0CFA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6D5E3F5018C58D71004D0CFA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6D5E3F5618C58D71004D0CFA /* GaTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5E3F5718C58D71004D0CFA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6D5E3F5F18C58D71004D0CFA /* GaTrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GaTrackerTests-Info.plist"; sourceTree = "<group>"; };
 		6D5E3F6118C58D71004D0CFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6D5E3F6318C58D71004D0CFA /* GaTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GaTrackerTests.m; sourceTree = "<group>"; };
+		6D5E3F6D18C58DB7004D0CFA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6D5E3F7218C58E65004D0CFA /* GAI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		6D5E3F7318C58E65004D0CFA /* GAITrackedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		6D5E3F7418C58E65004D0CFA /* GAITracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		6D5E3F7518C58E65004D0CFA /* GAITransaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAITransaction.h; sourceTree = "<group>"; };
+		6D5E3F7618C58E65004D0CFA /* GAITransactionItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAITransactionItem.h; sourceTree = "<group>"; };
+		6D5E3F7818C58F1C004D0CFA /* GATrackingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GATrackingService.h; sourceTree = "<group>"; };
+		6D5E3F7918C58F1C004D0CFA /* GATrackingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GATrackingService.m; sourceTree = "<group>"; };
+		6D5E3F8218C5981F004D0CFA /* GAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAViewController.h; sourceTree = "<group>"; };
+		6D5E3F8318C5981F004D0CFA /* GAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAViewController.m; sourceTree = "<group>"; };
+		6D5E3F8518C59900004D0CFA /* GATrackedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GATrackedController.h; sourceTree = "<group>"; };
+		6D5E3F8618C59900004D0CFA /* GATrackedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GATrackedController.m; sourceTree = "<group>"; };
+		6D5E3F8B18C59AB7004D0CFA /* EventTrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTrackedViewController.h; sourceTree = "<group>"; };
+		6D5E3F8C18C59AB7004D0CFA /* EventTrackedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTrackedViewController.m; sourceTree = "<group>"; };
+		6D5E3F8E18C59B18004D0CFA /* TrackedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackedTableViewController.h; sourceTree = "<group>"; };
+		6D5E3F8F18C59B18004D0CFA /* TrackedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackedTableViewController.m; sourceTree = "<group>"; };
+		6D5E3F9318C59EA5004D0CFA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6D5E3F9518C59EB1004D0CFA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6D5E3F9718C59F21004D0CFA /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		6D5E3F9918C59F35004D0CFA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		6D5E3F9B18C59F3D004D0CFA /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		6D5E3F9D18C59F79004D0CFA /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		6D5E3F9E18C59F79004D0CFA /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		6D5E3F9F18C59F79004D0CFA /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +92,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D5E3F9C18C59F3D004D0CFA /* AdSupport.framework in Frameworks */,
+				6D5E3F9A18C59F35004D0CFA /* libz.dylib in Frameworks */,
+				6D5E3F9618C59EB1004D0CFA /* SystemConfiguration.framework in Frameworks */,
+				6D5E3F9418C59EA5004D0CFA /* CoreData.framework in Frameworks */,
+				6D5E3F6E18C58DB7004D0CFA /* QuartzCore.framework in Frameworks */,
+				6D5E3F9818C59F21004D0CFA /* libGoogleAnalyticsServices.a in Frameworks */,
 				6D5E3F3B18C58D71004D0CFA /* CoreGraphics.framework in Frameworks */,
 				6D5E3F3D18C58D71004D0CFA /* UIKit.framework in Frameworks */,
 				6D5E3F3918C58D71004D0CFA /* Foundation.framework in Frameworks */,
@@ -101,6 +139,12 @@
 		6D5E3F3718C58D71004D0CFA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D5E3F9B18C59F3D004D0CFA /* AdSupport.framework */,
+				6D5E3F9918C59F35004D0CFA /* libz.dylib */,
+				6D5E3F9518C59EB1004D0CFA /* SystemConfiguration.framework */,
+				6D5E3F9318C59EA5004D0CFA /* CoreData.framework */,
+				6D5E3F6F18C58E3E004D0CFA /* GA */,
+				6D5E3F6D18C58DB7004D0CFA /* QuartzCore.framework */,
 				6D5E3F3818C58D71004D0CFA /* Foundation.framework */,
 				6D5E3F3A18C58D71004D0CFA /* CoreGraphics.framework */,
 				6D5E3F3C18C58D71004D0CFA /* UIKit.framework */,
@@ -112,13 +156,18 @@
 		6D5E3F3E18C58D71004D0CFA /* GaTracker */ = {
 			isa = PBXGroup;
 			children = (
+				6D5E3F8118C59811004D0CFA /* common */,
 				6D5E3F4718C58D71004D0CFA /* AppDelegate.h */,
 				6D5E3F4818C58D71004D0CFA /* AppDelegate.m */,
 				6D5E3F4A18C58D71004D0CFA /* Main.storyboard */,
-				6D5E3F4D18C58D71004D0CFA /* ViewController.h */,
-				6D5E3F4E18C58D71004D0CFA /* ViewController.m */,
 				6D5E3F5018C58D71004D0CFA /* Images.xcassets */,
 				6D5E3F3F18C58D71004D0CFA /* Supporting Files */,
+				6D5E3F8518C59900004D0CFA /* GATrackedController.h */,
+				6D5E3F8618C59900004D0CFA /* GATrackedController.m */,
+				6D5E3F8B18C59AB7004D0CFA /* EventTrackedViewController.h */,
+				6D5E3F8C18C59AB7004D0CFA /* EventTrackedViewController.m */,
+				6D5E3F8E18C59B18004D0CFA /* TrackedTableViewController.h */,
+				6D5E3F8F18C59B18004D0CFA /* TrackedTableViewController.m */,
 			);
 			path = GaTracker;
 			sourceTree = "<group>";
@@ -126,6 +175,7 @@
 		6D5E3F3F18C58D71004D0CFA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6D5E3F7718C58EBB004D0CFA /* Tracking */,
 				6D5E3F4018C58D71004D0CFA /* GaTracker-Info.plist */,
 				6D5E3F4118C58D71004D0CFA /* InfoPlist.strings */,
 				6D5E3F4418C58D71004D0CFA /* main.m */,
@@ -150,6 +200,40 @@
 				6D5E3F6018C58D71004D0CFA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D5E3F6F18C58E3E004D0CFA /* GA */ = {
+			isa = PBXGroup;
+			children = (
+				6D5E3F9718C59F21004D0CFA /* libGoogleAnalyticsServices.a */,
+				6D5E3F9D18C59F79004D0CFA /* GAIDictionaryBuilder.h */,
+				6D5E3F9E18C59F79004D0CFA /* GAIFields.h */,
+				6D5E3F9F18C59F79004D0CFA /* GAILogger.h */,
+				6D5E3F7218C58E65004D0CFA /* GAI.h */,
+				6D5E3F7318C58E65004D0CFA /* GAITrackedViewController.h */,
+				6D5E3F7418C58E65004D0CFA /* GAITracker.h */,
+				6D5E3F7518C58E65004D0CFA /* GAITransaction.h */,
+				6D5E3F7618C58E65004D0CFA /* GAITransactionItem.h */,
+			);
+			name = GA;
+			sourceTree = "<group>";
+		};
+		6D5E3F7718C58EBB004D0CFA /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				6D5E3F7818C58F1C004D0CFA /* GATrackingService.h */,
+				6D5E3F7918C58F1C004D0CFA /* GATrackingService.m */,
+			);
+			name = Tracking;
+			sourceTree = "<group>";
+		};
+		6D5E3F8118C59811004D0CFA /* common */ = {
+			isa = PBXGroup;
+			children = (
+				6D5E3F8218C5981F004D0CFA /* GAViewController.h */,
+				6D5E3F8318C5981F004D0CFA /* GAViewController.m */,
+			);
+			name = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,8 +332,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D5E3F4F18C58D71004D0CFA /* ViewController.m in Sources */,
+				6D5E3F8D18C59AB7004D0CFA /* EventTrackedViewController.m in Sources */,
+				6D5E3F8718C59900004D0CFA /* GATrackedController.m in Sources */,
 				6D5E3F4918C58D71004D0CFA /* AppDelegate.m in Sources */,
+				6D5E3F7A18C58F1C004D0CFA /* GATrackingService.m in Sources */,
+				6D5E3F8418C5981F004D0CFA /* GAViewController.m in Sources */,
+				6D5E3F9018C59B18004D0CFA /* TrackedTableViewController.m in Sources */,
 				6D5E3F4518C58D71004D0CFA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,6 +468,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GaTracker/GaTracker-Prefix.pch";
 				INFOPLIST_FILE = "GaTracker/GaTracker-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/gabrielmorales/Desktop/GaTracker,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,6 +485,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GaTracker/GaTracker-Prefix.pch";
 				INFOPLIST_FILE = "GaTracker/GaTracker-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/gabrielmorales/Desktop/GaTracker,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
