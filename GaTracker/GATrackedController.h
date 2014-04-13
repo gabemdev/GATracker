@@ -8,6 +8,7 @@
 
 #import "GAViewController.h"
 
+
 @interface GATrackedController : GAViewController
 
 @end

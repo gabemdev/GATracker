@@ -67,6 +67,7 @@
     NSURL *url = [NSURL URLWithString:string];
     [[UIApplication sharedApplication] openURL:url];
     [[GATrackingService sharedInstance] trackEvent:@"Projects - Tapped Project Cell" withValue:nil fromSender:string];
+    [[LocalyticsSession shared] tagEvent:@"Track this controller"];
 }
 
 

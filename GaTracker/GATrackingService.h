@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+#error Update tracking ids
+#define kCDKLocalyticsKey   @"Localytics Key"
+#define kCDKCrashlyticsKey  @"CrashLytics Key"
+#define kCDKGATrackingKey   @"Your tracking id"
 @interface GATrackingService : NSObject
 
 + (GATrackingService *)sharedInstance;

@@ -25,6 +25,7 @@
 {
     [super viewDidAppear:animated];
     [[GATrackingService sharedInstance] trackEvent:@"Event Viewed" withValue:nil fromSender:@"your sender"];
+    [[LocalyticsSession shared] tagScreen:@"Track this controller"];
 }
 
 - (void)didReceiveMemoryWarning

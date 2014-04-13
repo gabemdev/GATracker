@@ -24,13 +24,14 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-
-            [self trackEvent:@"Track this controller" withValue:nil];
+    [self trackEvent:@"Track this controller" withValue:nil];
+    [[LocalyticsSession shared] tagScreen:@"Track this controller"];
 }
 
 - (void)yourEvent{
     
     [self trackEvent:@"My event - start" withValue:nil];
+    [[LocalyticsSession shared] tagEvent:@"Track this controller"];
 }
 
 - (void)didReceiveMemoryWarning

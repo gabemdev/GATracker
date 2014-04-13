@@ -8,6 +8,8 @@
 
 #import "GATrackingService.h"
 #import "GAI.h"
+#import "LocalyticsSession.h"
+#import "LocalyticsUtilities.h"
 
 @interface GATrackingService()
 @property (nonatomic, strong) id <GAITracker> gaiTracker;
@@ -27,7 +29,13 @@
     if (self) {
         [GAI sharedInstance].trackUncaughtExceptions = YES;
         [GAI sharedInstance].dispatchInterval = 10;
-        self.gaiTracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-2793234-9"];
+        self.gaiTracker = [[GAI sharedInstance] trackerWithTrackingId:kCDKGATrackingKey];
+        [[LocalyticsSession shared] startSession:kCDKLocalyticsKey];
+        
+        //------------
+        //Use crashlytics to install
+        //------------
+        //[Crashlytics startWithAPIKey:kCDKCrashlyticsKey];
     }
     return self;
 }

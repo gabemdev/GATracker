@@ -7,6 +7,8 @@
 //
 
 #import "GAITrackedViewController.h"
+#import "LocalyticsSession.h"
+#import "LocalyticsUtilities.h"
 
 @interface GAViewController : GAITrackedViewController
 

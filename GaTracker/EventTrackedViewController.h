@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LocalyticsSession.h"
+#import "LocalyticsUtilities.h"
 
 @interface EventTrackedViewController : UIViewController
 
