@@ -1,6 +1,7 @@
 # GATracker
 
 This is a Google Analytics shared instance example. It allows for full view controller tracking as well as single events. 
+Now supports Localytics & Crashlytics
 
 # Requirements
 
@@ -9,6 +10,7 @@ GATracker works on any iOS version and is compatible with both ARC and non-ARC p
 * SystemConfiguration.framework
 * CoreData.framework
 * AdSupport.framework
+* Crashlytics.framework
     
 It depends on the following Apple Library:
 
@@ -29,6 +31,11 @@ You will need version 3.0 or later in order to build GATracker
 * GAIDictionaryBuilder.h(optional)
 * GAIFields.h(optional)
 * GAILogger.h(optional)
+* libLocalyticsAMP.a
+* LocalyticsAmpSession.h
+* LocalyticsSession.h
+* LocalyticsUtilities.h
+* LocalyticsUtilities.m
     
 # Installation 
 
@@ -38,17 +45,45 @@ You will need version 3.0 or later in order to build GATracker
     - Modify the `sendEventWithCategory` string with any event you want(ie. Your app name).
     - Enter your tracking id under "your tracking id"
 3. Include a shared instance in your `didFinishLaunchingWithOptions` and create `_loadSharedInstance:
+4. Directly add the `libLocalyticsAMP.a`, `LocalyticsSession.h`, `LocalyticsAmpSession.h`, `LocalyticsUtilities.h` and `LocalyticsUtilities.m`.
+5. Import `#import "LocalyticsSession.h"` to your delegate implementation.
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [self _loadSharedInstance];
+    [[LocalyticsSession shared] resume];
+    [[LocalyticsSession shared] upload];
     return YES;
 }
 
 - (void)_loadSharedInstance
 {
     [GATrackingService sharedInstance];
+}
+
+- (void)applicationWillResignActive:(UIApplication *)application
+{
+    [[LocalyticsSession shared] close];
+    [[LocalyticsSession shared] upload];
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
+    [[LocalyticsSession shared] close];
+    [[LocalyticsSession shared] upload];
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application
+{
+    [[LocalyticsSession shared] resume];
+    [[LocalyticsSession shared] upload];
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application
+{
+    [[LocalyticsSession shared] close];
+    [[LocalyticsSession shared] upload];
 }
 ```
 
@@ -59,6 +94,7 @@ You will need version 3.0 or later in order to build GATracker
 {
     [super viewDidAppear:animated];
     [[GATrackingService sharedInstance] trackEvent:@"Event Viewed" withValue:nil fromSender:@"your sender"];
+    [[LocalyticsSession shared] tagScreen:@"Track this controller"];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -70,6 +106,7 @@ You will need version 3.0 or later in order to build GATracker
     NSURL *url = [NSURL URLWithString:string];
     [[UIApplication sharedApplication] openURL:url];
     [[GATrackingService sharedInstance] trackEvent:@"Projects - Tapped Project Cell" withValue:nil fromSender:string];
+    [[LocalyticsSession shared] tagEvent:@"Track this event"];
 }
 ```
 
@@ -80,6 +117,9 @@ You may also want to track an entire view controller. You can accomplish this by
 Refer to the header file `GAViewController.h`.
 
 ```objective-c
+#import "GAITrackedViewController.h"
+#import "LocalyticsSession.h"
+#import "LocalyticsUtilities.h"
 @interface GAViewController : GAITrackedViewController
 
 /**
